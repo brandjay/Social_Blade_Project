@@ -1,0 +1,42 @@
+<head>
+  <title>Social blade</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<h2 class="text-3xl font-bold underline"> Welcome {{ request.user.username }}</h2>
+<br>
+<br>
+<div style="text-align: center;">
+
+</div>
+ 
+<div class="container-fluid text-center">
+  <h1>Social Blade</h1>
+  <p>welcome</p>
+
+  <ul class="breadcrumb">
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li class="active">
+      <a href="{% url 'posts' %}">View the latest Post</a> 
+    </li>        
+  </ul>
+  </div>
+
+
+<div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <div class="md:flex">
+      <div class="md:shrink-0">
+        <img class="h-48 w-full object-cover md:h-full md:w-48" src="https://w7.pngwing.com/pngs/298/243/png-transparent-email-address-computer-icons-mail-miscellaneous-angle-triangle-thumbnail.png" alt="create post">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Your post will appear here</div>
+        <a href="{% url 'postform' %}" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Create new post</a>
+      </div>
+    </div>
+  </div>
